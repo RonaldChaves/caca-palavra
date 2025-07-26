@@ -2,9 +2,12 @@
 #ifndef COORDENADAS_H
 #define COORDENADAS_H
 
-typedef struct Coordenadas {
-    int i;
-    int j;
+#include "matriz.h"
+
+typedef struct TCoordenadas {
+    int linhas;
+    int colunas;
 } TCoordenadas;
+
 
 #endif

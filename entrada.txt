@@ -1,0 +1,73 @@
+5 6
+sccelr
+uehayr
+geaimc
+cavrea
+cxepla
+
+ 1. Criar uma nova coordenada.
+ TCoordenada coordenada_criar(int i , int j) ;
+
+ 2. Verificar se coordenada está dentro dos limites da matriz, retornando 1 em caso positivo e 0 caso
+ contrário.
+ int coordenada_verificar(TCoorenada coordenada , TMatriz∗ matriz) ;
+
+-----------------------------------------------------
+
+ 3. Criar uma nova palavra.
+ TPalavra palavra_criar(char∗ palavra) ;
+ 
+4. Buscar palavra em uma coordenada específica do caça-palavras, retornando coordenada do final da
+ palavra caso exista, ou coordenada (-1,-1) caso contrário.
+ TCoordenada palavra_buscar_pos(TPalavra palavra , TMatriz∗ matriz ,
+ TCoordenada pos) ;
+ 
+5. Buscar palavra no caça-palavras, retornando coordenada do final da palavra caso exista, ou coor
+denada (-1,-1) caso contrário.
+ TCoordenada palavra_buscar(TPalavra palavra , TMatriz∗ matriz , TOcorrencias ocorr) ;
+ 
+6. Buscar uma palavra no caça-palavras, retornando 1 caso encontre e 0 caso contrário.
+ 
+int palavra_buscar(TPalavra∗ palavra , TMatriz∗ matriz , TOcorrencias ocorr) ;
+
+
+13. Adicionar uma palavra ao vetor de palavras, retornando o tamanho do vetor ou-1, caso não seja
+ possível;
+ int palavras_add(TPalavra∗ palavras , TPalavra palavra) ;
+ 
+14. Preencher caça-palavras a partir dos dados recebidos da entrada padrão, retornando 1 se possível
+ e 0 se não.
+ int palavras_preencher(TPalavra∗ palavras , int num_palavras) ;
+ 
+-----------------------------------------------------
+
+7. Adicionar uma nova coordenada no vetor de ocorrências de letras de um caça-palavras, retornando
+ 1 em caso de sucesso e 0 em caso de falha.
+ int ocorrencias_adicionar(TOcorrencias∗ ocorr , TCoordenadas coord);
+ 
+8. retornar um vetor de ocorrencias da primeira letra de uma palavra
+ TOcorrencias ocorrencias_buscar_palavra(TOcorrencias∗ ocorr, TPalavra palavra);
+ 
+9. Calcular ocorrências de letras de um caça-palavras, retornando 1 em caso de sucesso e 0 em caso
+ de falha.
+ int ocorrencias_calcular (TOcorrencias∗ ocorr , TMatriz∗ matriz) ;
+ 
+-----------------------------------------------------
+ 
+15. Resolver um caça-palavras (como explicado anteriormente), retornando 1 se possível e 0 se não.
+ int matriz_solucionar(TMatriz∗ matriz , TOcorrencias ocorr ,
+ TPalavra∗ palavras , int num_palavras) ;
+ 
+-----------------------------------------------------
+
+16. Imprimir solução do caça-palavras.
+ void palavras_imprimir_solucao(TPalavra∗ palavras) ;
+ 
+17. Desalocar memória do vetor de palavras, retornando 1 se possível e 0 caso contrário.
+ int palavras_apagar(TPalavra∗ palavras) ;
+ 
+18. Desalocar memória da matriz de ocorrências, retornando 1 se possível e 0 caso contrário.
+ int ocorrencias_apagar(TOcorrencias∗ ocorrencias ) ;
+ 
+19. Desalocar memória da matriz caça-palavras, retornando 1 se possível e 0 caso contrário.
+ int matriz_apagar(TMatriz∗ matriz) ;
