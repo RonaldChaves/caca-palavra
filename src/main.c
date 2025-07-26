@@ -38,15 +38,15 @@ int main() {
     
     matriz_completa(matriz);
     
-    // Inicializa as palavras
-    /*TPalavra* palavras;
+    \\Inicializa as palavras
+    TPalavra* palavras;
     int qtd_palavras;
 
     palavras_ler(&palavras, &qtd_palavras, matriz);
-    palavra_buscar_matriz(qtd_palavras, palavras, &ocorrencias, matriz);*/
+    palavra_buscar_matriz(qtd_palavras, palavras, &ocorrencias, matriz);
 
-    // Libera memória
-    //palavras_apagar(palavras);
+    \\Libera memória
+    palavras_apagar(palavras);
     matriz_apagar(matriz);
    
     return 0;
